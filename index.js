@@ -21,10 +21,11 @@ function currentLine (line) {
   }
   var str = "The line is currently: ";
 
-  for (let i = 0; i < line.length; i++) {
-    str += `\${i + 1}. ${line[i]},`
+  for (let i = 1; i < line.length + 1; i++) {
+    str += "i"
+    str += `. ${line[i + 1]},`
   }
-
+  str -= ","
 
   return str;
 }
