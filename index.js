@@ -20,13 +20,12 @@ function currentLine (line) {
     return "The line is currently empty.";
   }
   var str = "The line is currently: ";
-  var arr = []
+  
 
   for (let i = 0; i < line.length; i++) {
-    arr.push (`${i}. ${line[i]},`)
+    str = str + `${i + 1}. ${line[i]},`
   }
-  str += arr.join("");
-  str -= ','
+
 
   return str;
 }
