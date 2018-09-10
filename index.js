@@ -22,7 +22,9 @@ function currentLine (line) {
   var str = "The line is currently";
 
   for (i = 0; i < line.length; i++) {
-    str += `${i + 1}. ${line[i]}`
+    str += `${i + 1}. ${line[i]},`
+    str -= ","
   }
+  
   return str;
 }
